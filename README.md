@@ -2,7 +2,7 @@
 
 BookBot is my first [Boot.dev](https://www.boot.dev) project!
 
-## description ##
+## Description ##
 
 Program takes path to .txt file and prints number of words and characters in it.
 
