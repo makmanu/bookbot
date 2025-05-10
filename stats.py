@@ -1,7 +1,7 @@
-def countWords(string):
+def CountWords(string):
     return len(string.split())
 
-def countLetters(string):
+def CountLetters(string):
     lettersDict = {}
     for letter in string:
         letter = letter.lower()
@@ -10,3 +10,13 @@ def countLetters(string):
         else:
             lettersDict[letter] = 1
     return lettersDict
+
+def sortByCount(dict):
+    return dict["count"]
+
+def DictToSortedList(dict):
+    list = []
+    for key in dict:
+        list.append({"key": key, "count": dict[key]})
+        list.sort(key=sortByCount, reverse=True)
+    return list
